@@ -86,6 +86,7 @@ __PACKAGE__->add_columns(
 
 __PACKAGE__->set_primary_key("id");
 
+__PACKAGE__->belongs_to( type_id => 'CookBook::Schema::CookBookDB::Result::Type' );
 
 # Created by DBIx::Class::Schema::Loader v0.07037 @ 2013-11-09 22:46:52
 # DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:meW178ypiZfW1O1k7zYKhA

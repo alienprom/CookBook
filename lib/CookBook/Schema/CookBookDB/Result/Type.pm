@@ -71,6 +71,7 @@ __PACKAGE__->add_columns(
 
 __PACKAGE__->set_primary_key("id");
 
+ __PACKAGE__->has_many( id => 'CookBook::Schema::CookBookDB::Result::Dish','type_id', {cascading_delete => 1} );
 
 # Created by DBIx::Class::Schema::Loader v0.07037 @ 2013-11-09 22:46:52
 # DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:7XbRRXeI8jcSosYCneoatg
